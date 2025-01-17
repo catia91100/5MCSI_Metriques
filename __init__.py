@@ -11,9 +11,9 @@ app = Flask(__name__)
 def hello_world():
     return render_template('hello.html')
   
-@app.route('commits')
+@app.route("/commits/")
 def commits():
-    return render_template('commits.html')
+    return render_template("commits.html")
   
 @app.route("/contact/")
 def MaPremiereAPI():
