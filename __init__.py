@@ -11,6 +11,10 @@ app = Flask(__name__)
 def hello_world():
     return render_template('hello.html')
   
+@app.route('commits')
+def commits():
+    return render_template('commits.html')
+  
 @app.route("/contact/")
 def MaPremiereAPI():
   return render_template("contact.html")
